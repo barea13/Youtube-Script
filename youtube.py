@@ -35,5 +35,5 @@ def main():
 # Programa principal
 # ---------
 
-print('\n ¡¡Bienvenido al script para Youtube @ N3utr0n!!')
+print('\n ¡¡Bienvenido al script para Youtube @ Barea13!!')
 main()
