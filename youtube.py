@@ -14,7 +14,15 @@ import time
 
 # Funciones
 # ---------------------------------------------------------------------
+def looping(loop, tiempo, porcentaje, porcentaje_2, url_link):
+    for i in range(loop):
+        webbrowser.Mozilla
+        webbrowser.Chrome
+        print('\r',porcentaje, '%')
+        porcentaje = porcentaje + porcentaje_2
+        webbrowser.open(url_link, new=1, autoraise=True)
 
+        time.sleep(tiempo)
 # ---------------------------------------------------------------------
 
 def main():
@@ -26,14 +34,9 @@ def main():
     porcentaje = 100/loop
     porcentaje_2 = porcentaje
     print('\nProgreso:')
-    for i in range(loop):
-        webbrowser.Mozilla
-        webbrowser.Chrome
-        print('\r',porcentaje, '%')
-        porcentaje = porcentaje + porcentaje_2
-        webbrowser.open(url_link, new=1, autoraise=True)
-
-        time.sleep(tiempo)
+    looping(loop, tiempo, porcentaje, porcentaje_2, url_link)
+    print('Terminado con éxito!! El script se cerrará en 5 segundos...')
+    time.sleep(5)
 # Programa principal
 # ---------
 
