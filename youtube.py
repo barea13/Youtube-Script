@@ -21,6 +21,8 @@ def main():
     url_link = input('\nIntroduzca una URL de youtube: ')
     loop = input('\n¿Cuantas veces quieres que se repita? ')
     loop = int(loop)
+    tiempo = input('\nIntervalo de tiempo entre URL y URL (en segundos): ')
+    tiempo = int(tiempo)
     porcentaje = 100/loop
     porcentaje_2 = porcentaje
     print('\nProgreso:')
@@ -31,7 +33,7 @@ def main():
         porcentaje = porcentaje + porcentaje_2
         webbrowser.open(url_link, new=1, autoraise=True)
 
-        time.sleep(5)
+        time.sleep(tiempo)
 # Programa principal
 # ---------
 
